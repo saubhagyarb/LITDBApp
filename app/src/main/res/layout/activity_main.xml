@@ -1,0 +1,61 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    tools:context=".MainActivity">
+
+    <!-- Logo Section -->
+    <ImageView
+        android:id="@+id/logo_image"
+        android:layout_width="138dp"
+        android:layout_height="129dp"
+        android:layout_centerHorizontal="true"
+        android:src="@mipmap/ic_launcher"
+        android:contentDescription="App Logo"
+        android:layout_marginBottom="32dp"
+        android:layout_marginTop="16dp" />
+
+    <!-- Admin Login Button -->
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/admin_login_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Admin Login"
+        android:layout_below="@id/logo_image"
+        app:cornerRadius="8dp"
+        android:layout_marginTop="32dp"
+        app:icon="@drawable/admin"
+        app:iconPadding="8dp"
+        app:iconTint="@color/white"
+        app:backgroundTint="@color/black" />
+
+    <!-- Student Login Button -->
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/student_login_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Student Login"
+        android:layout_below="@id/admin_login_button"
+        android:layout_marginTop="16dp"
+        app:cornerRadius="8dp"
+        app:icon="@drawable/student"
+        app:iconPadding="8dp"
+        app:iconTint="@color/white"
+        app:backgroundTint="@color/black" />
+
+    <!-- Developed by Section -->
+    <TextView
+        android:id="@+id/developed_by_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Developed by Saubhagyaranjan Behera"
+        android:textSize="14sp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="32dp"
+        android:layout_marginBottom="16dp"
+        android:textColor="@color/black" />
+
+</RelativeLayout>

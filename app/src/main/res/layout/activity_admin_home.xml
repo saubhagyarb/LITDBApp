@@ -1,0 +1,68 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    tools:context=".MainActivity">
+
+    <!-- Logo Section -->
+    <ImageView
+        android:id="@+id/logo_image"
+        android:layout_width="118dp"
+        android:layout_height="116dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:contentDescription="App Logo"
+        android:src="@mipmap/ic_launcher" />
+
+    <!-- Add New Student Button -->
+
+    <!-- Download Student Details Button -->
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/add_new_student_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/logo_image"
+        app:icon="@drawable/person_add"
+        android:layout_marginTop="32dp"
+        android:text="Add New Student"
+        app:backgroundTint="@color/black"
+        app:cornerRadius="8dp" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/download_student_details_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Download Student Details"
+        android:layout_below="@id/add_new_student_button"
+        app:icon="@drawable/download"
+        android:layout_marginTop="16dp"
+        app:cornerRadius="8dp"
+        app:backgroundTint="@color/black" />
+
+    <!-- Exit Button -->
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/exit_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Exit"
+        android:layout_below="@id/download_student_details_button"
+        android:layout_marginTop="16dp"
+        app:icon="@drawable/exit"
+        app:cornerRadius="8dp"
+        app:backgroundTint="@color/black" />
+
+    <!-- Developed by Section -->
+    <TextView
+        android:id="@+id/developed_by_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Developed by Saubhagyaranjan Behera"
+        android:textSize="14sp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="32dp"
+        android:layout_marginBottom="16dp"
+        android:textColor="@color/black" />
+</RelativeLayout>
