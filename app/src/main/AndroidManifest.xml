@@ -7,7 +7,7 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher"
         android:supportsRtl="true"
-        android:theme="@style/Theme.LITDBApp">
+        android:theme="@style/AppTheme">
 
         <!-- Main Activity -->
         <activity

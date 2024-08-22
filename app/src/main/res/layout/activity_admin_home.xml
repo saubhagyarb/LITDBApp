@@ -4,6 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:padding="16dp"
+    android:background="@color/md_theme_background"
     tools:context=".MainActivity">
 
     <!-- Logo Section -->
@@ -17,8 +18,6 @@
         android:src="@mipmap/ic_launcher" />
 
     <!-- Add New Student Button -->
-
-    <!-- Download Student Details Button -->
     <com.google.android.material.button.MaterialButton
         android:id="@+id/add_new_student_button"
         android:layout_width="match_parent"
@@ -27,9 +26,11 @@
         app:icon="@drawable/person_add"
         android:layout_marginTop="32dp"
         android:text="Add New Student"
-        app:backgroundTint="@color/black"
+        app:backgroundTint="@color/md_theme_primary"
+        android:textColor="@color/md_theme_onPrimary"
         app:cornerRadius="8dp" />
 
+    <!-- Download Student Details Button -->
     <com.google.android.material.button.MaterialButton
         android:id="@+id/download_student_details_button"
         android:layout_width="match_parent"
@@ -39,7 +40,8 @@
         app:icon="@drawable/download"
         android:layout_marginTop="16dp"
         app:cornerRadius="8dp"
-        app:backgroundTint="@color/black" />
+        app:backgroundTint="@color/md_theme_primary"
+        android:textColor="@color/md_theme_onPrimary" />
 
     <!-- Exit Button -->
     <com.google.android.material.button.MaterialButton
@@ -51,7 +53,8 @@
         android:layout_marginTop="16dp"
         app:icon="@drawable/exit"
         app:cornerRadius="8dp"
-        app:backgroundTint="@color/black" />
+        app:backgroundTint="@color/md_theme_primary"
+        android:textColor="@color/md_theme_onPrimary" />
 
     <!-- Developed by Section -->
     <TextView
@@ -64,5 +67,5 @@
         android:layout_centerHorizontal="true"
         android:layout_marginTop="32dp"
         android:layout_marginBottom="16dp"
-        android:textColor="@color/black" />
+        android:textColor="@color/md_theme_onBackground" />
 </RelativeLayout>

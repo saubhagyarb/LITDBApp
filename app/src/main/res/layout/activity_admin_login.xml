@@ -4,6 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:padding="16dp"
+    android:background="@color/md_theme_background"
     tools:context=".MainActivity">
 
     <!-- Logo Section -->
@@ -13,8 +14,8 @@
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
         android:src="@mipmap/ic_launcher"
-    android:contentDescription="App Logo"
-    android:layout_marginTop="16dp" />
+        android:contentDescription="App Logo"
+        android:layout_marginTop="16dp" />
 
     <!-- Username Input -->
     <com.google.android.material.textfield.TextInputLayout
@@ -24,13 +25,16 @@
         android:layout_below="@id/logo_image"
         android:layout_marginTop="32dp"
         app:hintEnabled="true"
-        app:boxStrokeWidth="1dp">
+        app:boxStrokeWidth="1dp"
+        app:boxStrokeColor="@color/md_theme_outline"
+        android:textColorHint="@color/md_theme_onSurfaceVariant">
 
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/username"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Username" />
+            android:hint="Username"
+            android:textColor="@color/md_theme_onSurface" />
     </com.google.android.material.textfield.TextInputLayout>
 
     <!-- Password Input -->
@@ -41,14 +45,17 @@
         android:layout_below="@id/username_layout"
         android:layout_marginTop="16dp"
         app:hintEnabled="true"
-        app:boxStrokeWidth="1dp">
+        app:boxStrokeWidth="1dp"
+        app:boxStrokeColor="@color/md_theme_outline"
+        android:textColorHint="@color/md_theme_onSurfaceVariant">
 
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/password"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="Password"
-            android:inputType="textPassword" />
+            android:inputType="textPassword"
+            android:textColor="@color/md_theme_onSurface" />
     </com.google.android.material.textfield.TextInputLayout>
 
     <!-- Login Button -->
@@ -61,7 +68,8 @@
         android:layout_below="@id/password_layout"
         android:layout_marginTop="16dp"
         app:cornerRadius="8dp"
-        app:backgroundTint="@color/black" />
+        app:backgroundTint="@color/md_theme_primary"
+        android:textColor="@color/md_theme_onPrimary" />
 
     <!-- Exit Button -->
     <com.google.android.material.button.MaterialButton
@@ -73,7 +81,8 @@
         android:layout_marginTop="16dp"
         app:icon="@drawable/exit"
         app:cornerRadius="8dp"
-        app:backgroundTint="@color/black" />
+        app:backgroundTint="@color/md_theme_primary"
+        android:textColor="@color/md_theme_onPrimary" />
 
     <!-- Developed by Section -->
     <TextView
@@ -86,6 +95,6 @@
         android:layout_centerHorizontal="true"
         android:layout_marginTop="32dp"
         android:layout_marginBottom="16dp"
-        android:textColor="@color/black" />
+        android:textColor="@color/md_theme_onBackground" />
 
 </RelativeLayout>

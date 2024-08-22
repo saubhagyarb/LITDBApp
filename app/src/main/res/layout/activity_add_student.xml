@@ -4,6 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:padding="16dp"
+    android:background="?attr/colorSurface"
     tools:context=".MainActivity">
 
     <!-- Logo Section -->
@@ -23,6 +24,9 @@
         android:layout_height="wrap_content"
         android:layout_below="@id/logo_image"
         android:layout_marginTop="32dp"
+        android:textColorHint="?attr/colorOnSurfaceVariant"
+        app:boxStrokeColor="?attr/colorPrimary"
+        app:hintTextColor="?attr/colorPrimary"
         app:hintEnabled="true"
         app:boxStrokeWidth="1dp">
 
@@ -30,7 +34,8 @@
             android:id="@+id/roll_no"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Roll No" />
+            android:hint="Roll No"
+            android:textColor="?attr/colorOnSurface" />
     </com.google.android.material.textfield.TextInputLayout>
 
     <!-- Student Name Input -->
@@ -40,6 +45,9 @@
         android:layout_height="wrap_content"
         android:layout_below="@id/roll_no_layout"
         android:layout_marginTop="16dp"
+        android:textColorHint="?attr/colorOnSurfaceVariant"
+        app:boxStrokeColor="?attr/colorPrimary"
+        app:hintTextColor="?attr/colorPrimary"
         app:hintEnabled="true"
         app:boxStrokeWidth="1dp">
 
@@ -47,7 +55,8 @@
             android:id="@+id/student_name"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Student Name" />
+            android:hint="Student Name"
+            android:textColor="?attr/colorOnSurface" />
     </com.google.android.material.textfield.TextInputLayout>
 
     <!-- Academic Year Input -->
@@ -57,6 +66,9 @@
         android:layout_height="wrap_content"
         android:layout_below="@id/student_name_layout"
         android:layout_marginTop="16dp"
+        android:textColorHint="?attr/colorOnSurfaceVariant"
+        app:boxStrokeColor="?attr/colorPrimary"
+        app:hintTextColor="?attr/colorPrimary"
         app:hintEnabled="true"
         app:boxStrokeWidth="1dp">
 
@@ -64,7 +76,8 @@
             android:id="@+id/academic_year"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Academic Year" />
+            android:hint="Academic Year"
+            android:textColor="?attr/colorOnSurface" />
     </com.google.android.material.textfield.TextInputLayout>
 
     <!-- Department Name Input -->
@@ -74,6 +87,9 @@
         android:layout_height="wrap_content"
         android:layout_below="@id/academic_year_layout"
         android:layout_marginTop="16dp"
+        android:textColorHint="?attr/colorOnSurfaceVariant"
+        app:boxStrokeColor="?attr/colorPrimary"
+        app:hintTextColor="?attr/colorPrimary"
         app:hintEnabled="true"
         app:boxStrokeWidth="1dp">
 
@@ -81,7 +97,8 @@
             android:id="@+id/department_name"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Department Name" />
+            android:hint="Department Name"
+            android:textColor="?attr/colorOnSurface" />
     </com.google.android.material.textfield.TextInputLayout>
 
     <!-- Password Input -->
@@ -91,6 +108,9 @@
         android:layout_height="wrap_content"
         android:layout_below="@id/department_name_layout"
         android:layout_marginTop="16dp"
+        android:textColorHint="?attr/colorOnSurfaceVariant"
+        app:boxStrokeColor="?attr/colorPrimary"
+        app:hintTextColor="?attr/colorPrimary"
         app:hintEnabled="true"
         app:boxStrokeWidth="1dp">
 
@@ -99,7 +119,8 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="Password"
-            android:inputType="textPassword" />
+            android:inputType="textPassword"
+            android:textColor="?attr/colorOnSurface" />
     </com.google.android.material.textfield.TextInputLayout>
 
     <!-- Add Student Button -->
@@ -112,7 +133,9 @@
         android:layout_below="@id/password_layout"
         android:layout_marginTop="16dp"
         app:cornerRadius="8dp"
-        app:backgroundTint="@color/black" />
+        android:textColor="?attr/colorOnPrimary"
+        app:backgroundTint="?attr/colorPrimary"
+        app:iconTint="?attr/colorOnPrimary" />
 
     <!-- Developed by Section -->
     <TextView
@@ -125,6 +148,6 @@
         android:layout_centerHorizontal="true"
         android:layout_marginTop="32dp"
         android:layout_marginBottom="16dp"
-        android:textColor="@color/black" />
+        android:textColor="?attr/colorOnSurface" />
 
 </RelativeLayout>

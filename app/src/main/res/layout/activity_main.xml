@@ -4,6 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:padding="16dp"
+    android:background="@color/md_theme_background"
     tools:context=".MainActivity">
 
     <!-- Logo Section -->
@@ -28,8 +29,9 @@
         android:layout_marginTop="32dp"
         app:icon="@drawable/admin"
         app:iconPadding="8dp"
-        app:iconTint="@color/white"
-        app:backgroundTint="@color/black" />
+        app:iconTint="@color/md_theme_onPrimary"
+        android:textColor="@color/md_theme_onPrimary"
+        app:backgroundTint="@color/md_theme_primary" />
 
     <!-- Student Login Button -->
     <com.google.android.material.button.MaterialButton
@@ -42,8 +44,9 @@
         app:cornerRadius="8dp"
         app:icon="@drawable/student"
         app:iconPadding="8dp"
-        app:iconTint="@color/white"
-        app:backgroundTint="@color/black" />
+        app:iconTint="@color/md_theme_onSecondary"
+        android:textColor="@color/md_theme_onSecondary"
+        app:backgroundTint="@color/md_theme_secondary" />
 
     <!-- Developed by Section -->
     <TextView
@@ -56,6 +59,6 @@
         android:layout_centerHorizontal="true"
         android:layout_marginTop="32dp"
         android:layout_marginBottom="16dp"
-        android:textColor="@color/black" />
+        android:textColor="@color/md_theme_onBackground" />
 
 </RelativeLayout>
